@@ -1,0 +1,30 @@
+{
+    "name": "hendel/api-bestseller",
+    "description": "Hendel Api BestSellers",
+    "suggest": {
+        "magento/module-cookie": "100.0.*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "type": "magento2-module",
+    "version": "2.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "magento/module-catalog": "103.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Hendel\\BestSeller\\": ""
+        }
+    }
+}
